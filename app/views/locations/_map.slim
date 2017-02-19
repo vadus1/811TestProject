@@ -1,0 +1,7 @@
+- content_for :head do
+  = javascript_include_tag('https://maps.googleapis.com/maps/api/js?libraries=drawing&key=AIzaSyCwbl-8gYdCt5vcUvcjFo77HyOtMxj86HQ')
+header.page-header
+  h1
+    | Map
+#map data-polygons="#{data_for_google_map(@location)}"
+hr

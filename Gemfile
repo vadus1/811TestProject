@@ -6,6 +6,8 @@ gem 'rails', '4.2.8.rc1'
 gem 'pg'
 #PostGIS
 gem 'activerecord-postgis-adapter'
+# Is an extension to RGeo that provides GeoJSON encoding and decoding.
+gem 'rgeo-geojson'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

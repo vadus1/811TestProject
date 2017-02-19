@@ -1,0 +1,7 @@
+.row
+  = simple_form_for @location, wrapper: :horizontal_form, validate: true do |f|
+    = f.input :area, as: :hidden, validate: false
+    .col-md-10
+      = f.input :name
+    .col-md-2
+      = f.button :submit
