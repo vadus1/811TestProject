@@ -3,3 +3,5 @@ rvm:
   - 2.3.3
 env:
   - DB=postgis
+before_script:
+  - cp config/database.travis.yml config/database.yml
