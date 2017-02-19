@@ -1,2 +1,16 @@
-h1 Locations#show
-p Find me in app/views/locations/show.html.slim
+- content_for :head do
+  = javascript_include_tag 'index_locations'
+
+= render 'map'
+table.table.table-bordered.js-coordinates-table
+  thead
+    tr
+      th #
+      th Latitude
+      th Longitude
+  tbody
+    - points_coordinates(@location).each_with_index do |coordinates, index|
+      tr
+        td= index + 1
+        td= coordinates[:lat]
+        td= coordinates[:lng]

@@ -1,3 +1,6 @@
+- content_for :head do
+  = javascript_include_tag 'index_locations'
+
 = render 'map'
 table.table.table-bordered.js-locations-table
   thead
