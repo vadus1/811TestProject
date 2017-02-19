@@ -1,4 +1,4 @@
-module LocationHelper
+module LocationsHelper
   def points_coordinates(location)
     RGeo::GeoJSON.encode(location.area)['coordinates'].first.map do |coordinates|
       { lat: coordinates[0], lng: coordinates[1] }
