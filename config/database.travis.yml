@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgis
+  username: postgres
+  password:
+  database: test_app_<%= Rails.env %>
+  min_messages: ERROR
+  pool: 5
+  timeout: 5000
+  host: localhost
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
