@@ -1,4 +1,4 @@
-#= require ./show_polygons
+#= require show_polygons
 
 $(document).ready ->
   showPolygons()

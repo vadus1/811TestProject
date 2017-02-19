@@ -27,6 +27,11 @@ class LocationsController < ApplicationController
   end
 
   def update
+    if @location.update(location_params)
+      redirect_to location_path(@location), flash: { success: 'Location was successfully updated' }
+    else
+      render :edit
+    end
   end
 
   private
