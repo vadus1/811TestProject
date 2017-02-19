@@ -1,0 +1,15 @@
+= render 'map'
+table.table.table-bordered.js-locations-table
+  thead
+    tr
+      th Name
+      th Coordinates
+      th Actions
+  tbody
+    - @locations.each do |location|
+      tr
+        td= location.name
+        td= points_coordinates(location)
+        td
+          = link_to 'Show', location_path(location), class: 'btn btn-success'
+          = link_to 'Edit', edit_location_path(location), class: 'btn btn-primary'

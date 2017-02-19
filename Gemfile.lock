@@ -141,6 +141,8 @@ GEM
     rgeo-activerecord (4.0.5)
       activerecord (~> 4.2)
       rgeo (~> 0.3)
+    rgeo-geojson (0.4.3)
+      rgeo (~> 0.5)
     ruby-progressbar (1.8.1)
     sass (3.4.23)
     sass-rails (5.0.6)
@@ -207,6 +209,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.8.rc1)
   rails_best_practices
+  rgeo-geojson
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form
